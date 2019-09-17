@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="BagelOrderForm.jnlp">
+  <information>
+    <title>BagelOrderForm</title>
+    <vendor>agost</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="BagelOrderForm.jar" size="8163" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="bagelorderform.BagelOrderForm"  name="BagelOrderForm" />
+  <update check="always"/>
+</jnlp>

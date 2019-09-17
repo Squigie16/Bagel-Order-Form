@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bagelorderform.FXMLDocumentController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="32.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="557.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="32.0" layoutY="626.0" stroke="BLACK" strokeType="INSIDE" width="557.0" />
+      <Label layoutX="119.0" layoutY="23.0" text="Sheridan Bagel House" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" layoutX="32.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+      <Label layoutX="45.0" layoutY="115.0" text="Bagel" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="whiteRadio" layoutX="45.0" layoutY="150.0" mnemonicParsing="false" onAction="#DisplayTextField" text="White" textFill="#fffa00">
+         <toggleGroup>
+            <ToggleGroup fx:id="BagelGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="wheatRadio" layoutX="45.0" layoutY="180.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Whole Wheat" textFill="#fffa00" toggleGroup="$BagelGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="cheddarRadio" layoutX="45.0" layoutY="210.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Cheddar" textFill="#fffa00" toggleGroup="$BagelGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="poppyRadio" layoutX="45.0" layoutY="240.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Poppy Seed" textFill="#fffa00" toggleGroup="$BagelGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" layoutX="313.0" layoutY="109.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+      <Label layoutX="320.0" layoutY="115.0" text="Coffee" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="frenchRadio" layoutX="320.0" layoutY="240.0" mnemonicParsing="false" onAction="#DisplayTextField" text="French Vanilla" textFill="#fffa00">
+         <toggleGroup>
+            <ToggleGroup fx:id="CoffeeGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="cappRadio" layoutX="320.0" layoutY="210.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Cappuccino" textFill="#fffa00" toggleGroup="$CoffeeGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="regularRadio" layoutX="320.0" layoutY="180.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Regular" textFill="#fffa00" toggleGroup="$CoffeeGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="blackRadio" layoutX="320.0" layoutY="150.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Black" textFill="#fffa00" toggleGroup="$CoffeeGroup">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </RadioButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" layoutX="32.0" layoutY="359.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+      <Label layoutX="45.0" layoutY="365.0" text="Toppings " textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="creamCheck" layoutX="45.0" layoutY="395.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Cream Cheese" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="butterCheck" layoutX="45.0" layoutY="420.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Butter" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="raspCheck" layoutX="45.0" layoutY="470.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Raspberry Jam" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="strawCheck" layoutX="45.0" layoutY="445.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Strawberry Jam" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="blueCheck" layoutX="45.0" layoutY="495.0" mnemonicParsing="false" onAction="#DisplayTextField" text="Blueberry Jam" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="175.0" layoutX="313.0" layoutY="359.0" stroke="BLACK" strokeType="INSIDE" width="276.0" />
+      <Label layoutX="330.0" layoutY="365.0" text="Cost" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="415.0" text="Total: " textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="452.0" text="Tax: " textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="490.0" text="Grand Total: " textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalculate" layoutX="95.0" layoutY="575.0" mnemonicParsing="false" onAction="#Calculate" text="Calculate" textAlignment="CENTER" textFill="DODGERBLUE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReset" layoutX="258.0" layoutY="575.0" mnemonicParsing="false" onAction="#Reset" prefWidth="105.0" text="Reset" textFill="DODGERBLUE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="419.0" layoutY="575.0" mnemonicParsing="false" onAction="#Exit" prefWidth="105.0" text="Exit" textFill="DODGERBLUE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <MenuBar layoutX="32.0" layoutY="74.0" prefHeight="25.0" prefWidth="557.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="printReceipt" mnemonicParsing="false" onAction="#PrintReceipt" text="Print Receipt" />
+                  <MenuItem fx:id="getReceipt" mnemonicParsing="false" onAction="#WritetoFile" text="Get Receipt" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem fx:id="pricesMenu" mnemonicParsing="false" onAction="#MenuItems" text="Show Prices" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="saleTotal" layoutX="524.0" layoutY="415.0" text="\$0.00" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="taxTotal" layoutX="524.0" layoutY="452.0" text="\$0.00" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="grandTotal" layoutX="524.0" layoutY="490.0" text="\$0.00" textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="115.0" text="QTY." textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="515.0" layoutY="115.0" text="QTY." textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="365.0" text="QTY." textFill="#fffa00">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="whiteQty" disable="true" layoutX="230.0" layoutY="150.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="wheatQty" disable="true" layoutX="230.0" layoutY="180.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="cheddarQty" disable="true" layoutX="230.0" layoutY="210.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="poppyQty" disable="true" layoutX="230.0" layoutY="240.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="creamQty" disable="true" layoutX="230.0" layoutY="395.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="butterQty" disable="true" layoutX="230.0" layoutY="420.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="strawQty" disable="true" layoutX="230.0" layoutY="445.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="raspQty" disable="true" layoutX="230.0" layoutY="470.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="blueQty" disable="true" layoutX="230.0" layoutY="495.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="blackQty" disable="true" layoutX="515.0" layoutY="150.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="regularQty" disable="true" layoutX="515.0" layoutY="180.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="cappQty" disable="true" layoutX="515.0" layoutY="210.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="frenchQty" disable="true" layoutX="515.0" layoutY="240.0" prefHeight="25.0" prefWidth="57.0" />
+    </children>
+</AnchorPane>
